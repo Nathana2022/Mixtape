@@ -18,7 +18,6 @@ export const SongList = ({songs}) => {
         <Song key={song.name} {...song} />
       ))
       }
-      {/* <h2>TODO: Update taste in music...?</h2> */}
     </div>
   );
 };

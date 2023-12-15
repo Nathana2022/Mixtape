@@ -12,6 +12,7 @@ export const Controls = () => {
         <option value="rap">Rap</option>
         <option value="hip hop">Hip Hop</option>
         <option value="rock">Rock</option>
+        <option value="gospel">Gospel</option>
       </select>
       <button onClick={() => {setSortOrder(!sortOrder)}}>
         {sortOrder === true ? 'Descending' : 'Ascending'}

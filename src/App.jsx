@@ -50,13 +50,4 @@ const songs = [
   }
 ];
 
-// function App() {
-//     return (
-//     <div className="app">
-//       <h1 className="heading">My 🔥 Mixtape</h1>
-//       TODO: make some music...? 🎶
-//     </div>
-//   );
-// }
-
 export default App
