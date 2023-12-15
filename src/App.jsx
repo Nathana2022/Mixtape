@@ -1,5 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {MixtapeProvider} from "./MixtapeContext";
+import {SongList} from "./SongList";
+import {Controls} from "./Controls";
+import "./index.css";
+
+export const MixtapeApp =()=>{
+  return (
+    <div className='app'>
+      <h1 className='heading'>My 🔥 Mixtape</h1>
+      <MixtapeProvider>
+        <Controls/>
+        <SongList songs={songs}/>
+      </MixtapeProvider>
+    </div>
+  );
+};
+
 const songs = [
   {
     artist: "Smash Mouth",
@@ -33,13 +50,13 @@ const songs = [
   }
 ];
 
-function App() {
-    return (
-    <div className="app">
-      <h1 className="heading">My 🔥 Mixtape</h1>
-      TODO: make some music...? 🎶
-    </div>
-  );
-}
+// function App() {
+//     return (
+//     <div className="app">
+//       <h1 className="heading">My 🔥 Mixtape</h1>
+//       TODO: make some music...? 🎶
+//     </div>
+//   );
+// }
 
 export default App
